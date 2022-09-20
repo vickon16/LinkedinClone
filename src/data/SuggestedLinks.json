@@ -1,0 +1,52 @@
+[
+  {
+    "id": 0,
+    "title": "Engineering",
+    "active": true
+  },
+  {
+    "id": 1,
+    "title": "Business Development",
+    "active": false
+  },
+  {
+    "id": 2,
+    "title": "Finance",
+    "active": false
+  },
+  {
+    "id": 3,
+    "title": "Administrative Assistant",
+    "active": false
+  },
+  {
+    "id": 4,
+    "title": "Retail Associate",
+    "active": false
+  },
+  {
+    "id": 5,
+    "title": "Customer Service",
+    "active": false
+  },
+  {
+    "id": 6,
+    "title": "Operations",
+    "active": false
+  },
+  {
+    "id": 7,
+    "title": "Information Technology",
+    "active": false
+  },
+  {
+    "id": 8,
+    "title": "Marketing",
+    "active": false
+  },
+  {
+    "id": 9,
+    "title": "Human Resources",
+    "active": false
+  }
+]

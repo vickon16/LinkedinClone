@@ -1,8 +1,13 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore} from '@reduxjs/toolkit';
+import UserReducer from "../features/user/userSlice";
+import PostReducer from "../features/post/postSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    user: UserReducer,
+    post: PostReducer,
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+      serializableCheck: false,
+    }),
 });
