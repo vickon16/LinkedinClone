@@ -24,6 +24,13 @@ function App() {
         const {email, displayName, photoURL} = user
         dispatch(setSignedUpUser({email, displayName, photoURL }));
         setAppLoading(false);
+      } else {
+        localStorage.tempUser = JSON.stringify({
+          email : "UserName2016@gmail.com",
+          displayName: "User Name",
+          photoURL: "/images/john-doe.png",
+        });
+        setAppLoading(false);
       }
     })
     return onSub;
@@ -46,7 +53,7 @@ function App() {
           />
           <Route path="/signup" element={<Signup />} />
 
-          <Route path="/*" element={<Navigate to="/signin" />} />
+          <Route path="/*" element={<Navigate to="/home" />} />
         </Routes>
       </Router>
     );
